@@ -1,0 +1,3 @@
+Morphine => (Static Lib) Morphine API ; Contains actual Morphine code (e.g. pairing PSMoves, tracking, sensor fusion, etc.)
+MorphineTool => (GUI + SteamVR) Morphine Server + Config ; All in one tool to configure Morphine and run the Morphine server. Has an OpenVR overlay for ease of use.
+MorphineDebug => (GUI) Morphine Debug Client ; A simple debugger for testing Morphine without having to relaunch SteamVR every 2 minutes. Also allows me to develop Morphine when I'm not on a VR Ready machine.
