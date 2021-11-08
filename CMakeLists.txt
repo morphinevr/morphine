@@ -4,5 +4,5 @@ project("Morphine")
 
 # Include projects
 add_subdirectory ("Morphine")
-add_subdirectory ("MorphineConfig")
-add_subdirectory ("vendor")
+add_subdirectory ("MorphineDebug")
+add_subdirectory ("MorphineTool")
