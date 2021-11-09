@@ -5,5 +5,5 @@ project(MorphineDebug)
 set(CMAKE_CXX_STANDARD 14)
 
 # Add source files
-file(GLOB_RECURSE SOURCES_DBG RELATIVE ${CMAKE_SOURCE_DIR}/MorphineDebug "*.c" "*.h" "*.cpp")
+file(GLOB_RECURSE SOURCES_DBG RELATIVE ${CMAKE_SOURCE_DIR}/MorphineDebug "src/*.c" "src/*.h" "src/*.cpp")
 add_executable(MorphineDebug ${SOURCES_DBG})
