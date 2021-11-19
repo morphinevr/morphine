@@ -3,9 +3,9 @@
 
 int main() {
 
-	std::cout << "Hello from MorphineTool!" << std::endl;
+    std::cout << "Hello from MorphineTool!" << std::endl;
 
     Morphine::MorphineCore::Init();
 
-	return 0;
+    return 0;
 }

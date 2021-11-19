@@ -3,6 +3,6 @@
 
 namespace Morphine {
     void MorphineCore::Init() {
-	    std::cout << "Hello from MorphineAPI!" << std::endl;
+        std::cout << "Hello from MorphineAPI!" << std::endl;
     }
 }
