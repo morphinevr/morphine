@@ -501,3 +501,8 @@ FodyWeavers.xsd
 # CMake build stuff
 dl/
 bindings/
+
+# PSMoveAPI
+psmove_config.h
+psmoveapi.pc
+x.tar.gz
