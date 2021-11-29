@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 project(MorphineDebug)
+message("MorphineDebug")
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -14,6 +15,8 @@ target_include_directories(MorphineDebug
 	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/glfw/include)
 
 target_link_libraries(MorphineDebug
-	Morphine
-	glew
-	GLFW)
+	PRIVATE Morphine
+	PRIVATE libglew_static
+	PRIVATE glfw)
+
+adjust_bin_paths(MorphineDebug)

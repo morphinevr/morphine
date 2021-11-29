@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 project(MorphineTool)
+message("MorphineTool")
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -12,7 +13,10 @@ target_include_directories(MorphineTool
 	PUBLIC ${MORPHINE_REQUIRED_LIBS}
 	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/glew/include
 	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/glfw/include)
+
 target_link_libraries(MorphineTool
-	Morphine
-	glew
-	GLFW)
+	PRIVATE Morphine
+	PRIVATE libglew_static
+	PRIVATE glfw)
+
+adjust_bin_paths(MorphineTool)
