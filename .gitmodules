@@ -9,4 +9,4 @@
 	url = https://github.com/g-truc/glm.git
 [submodule "vendor/glew"]
 	path = vendor/glew
-	url = https://github.com/nigels-com/glew.git
+	url = https://github.com/Perlmint/glew-cmake.git

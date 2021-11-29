@@ -10,4 +10,12 @@ set(MORPHINE_REQUIRED_LIBS)			# Container for library dependencies (aka pissmove
 file(GLOB_RECURSE SOURCES_API RELATIVE ${CMAKE_SOURCE_DIR}/Morphine "src/*.c" "src/*.h" "src/*.cpp")
 file(GLOB_RECURSE SOURCES_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/Morphine "include/*.h")
 add_library(Morphine STATIC ${SOURCES_API} ${SOURCES_HEADERS})
-target_include_directories(Morphine PUBLIC ${MORPHINE_REQUIRED_LIBS} ${CMAKE_SOURCE_DIR}/Morphine/include)
+
+target_include_directories(Morphine
+	PUBLIC ${MORPHINE_REQUIRED_LIBS}
+	PUBLIC ${CMAKE_SOURCE_DIR}/Morphine/include
+	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/psmoveapi/include)
+
+target_link_libraries(Morphine
+	glm
+	PSMoveAPI)

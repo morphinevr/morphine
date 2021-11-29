@@ -1,5 +1,8 @@
 cmake_minimum_required (VERSION 3.8)
 
+# Libs
+add_subdirectory ("vendor")
+
 project("Morphine")
 
 # Include projects

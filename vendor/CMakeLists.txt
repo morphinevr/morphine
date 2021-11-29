@@ -1,0 +1,21 @@
+cmake_minimum_required (VERSION 3.8)
+
+# Libs
+add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/glew)
+add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/glfw)
+add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/glm)
+
+# PSMoveAPI
+set(PSMOVE_USE_PS3EYE_DRIVER 0)
+
+set(PSMOVE_BUILD_JAVA_BINDINGS 0)
+set(PSMOVE_BUILD_CSHARP_BINDINGS 0)
+set(PSMOVE_BUILD_PROCESSING_BINDINGS 0)
+set(PSMOVE_BUILD_PYTHON_BINDINGS 0)
+
+set(PSMOVE_BUILD_EXAMPLES 0)
+set(PSMOVE_BUILD_OPENGL_EXAMPLES 0)
+set(PSMOVE_BUILD_TESTS 0)
+set(PSMOVE_BUILD_NAVCON_TEST 0)
+
+add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/psmoveapi)

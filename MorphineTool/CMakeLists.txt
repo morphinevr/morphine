@@ -7,4 +7,12 @@ set(CMAKE_CXX_STANDARD 14)
 # Add source files
 file(GLOB_RECURSE SOURCES_TOOL RELATIVE ${CMAKE_SOURCE_DIR}/MorphineConfig "src/*.c" "src/*.h" "src/*.cpp")
 add_executable(MorphineTool ${SOURCES_TOOL})
-target_link_libraries(MorphineTool Morphine)
+
+target_include_directories(MorphineTool
+	PUBLIC ${MORPHINE_REQUIRED_LIBS}
+	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/glew/include
+	PUBLIC ${CMAKE_SOURCE_DIR}/vendor/glfw/include)
+target_link_libraries(MorphineTool
+	Morphine
+	glew
+	GLFW)
