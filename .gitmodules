@@ -10,3 +10,6 @@
 [submodule "vendor/glew"]
 	path = vendor/glew
 	url = https://github.com/Perlmint/glew-cmake.git
+[submodule "vendor/imgui"]
+	path = vendor/imgui
+	url = https://github.com/ocornut/imgui.git
