@@ -20,4 +20,6 @@ target_include_directories(Morphine
 
 target_link_libraries(Morphine
 	PRIVATE glm
+	PUBLIC usb
+	PUBLIC usbcompat
 	PUBLIC psmoveapi)

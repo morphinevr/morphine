@@ -17,6 +17,7 @@ target_include_directories(MorphineDebug
 target_link_libraries(MorphineDebug
 	PRIVATE Morphine
 	PRIVATE libglew_static
-	PRIVATE glfw)
+	PRIVATE glfw
+	PRIVATE ImGUI)
 
 adjust_bin_paths(MorphineDebug)

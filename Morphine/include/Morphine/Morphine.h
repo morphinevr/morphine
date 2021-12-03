@@ -1,18 +1,9 @@
 #ifndef MORPHINE_API_HEADER_INC
 #define MORPHINE_API_HEADER_INC
 
-namespace Morphine {
+// Include all header files
 
-    class MorphineCore {
-    
-    public:
-
-        static void Init();
-
-    private:
-
-
-    };
-}
+#include "Morphine/src/MorphineCore.h"
+#include "Morphine/src/Pairing/PSMovePair.h"
 
 #endif // !MORPHINE_API_HEADER_INC

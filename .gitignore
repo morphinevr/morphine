@@ -499,6 +499,7 @@ FodyWeavers.xsd
 .vscode
 
 # CMake build stuff
+*.dir/
 dl/
 bindings/
 
